@@ -72,7 +72,19 @@
 			"": {
 				"dataSource": "mainService",
 				"preload": true,
-				"settings": {}
+				"settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true,
+          "groupId": "$auto",
+          "httpHeaders": {
+            "DJP-My-Custom-Header": "djpmyCustomValue"
+          },
+          "groupProperties": {
+            "fastGroup": { "submit": "Auto" },
+            "slowGroup": { "submit": "Auto" }
+          }
+        }
 			}
     },
     "resources": {
